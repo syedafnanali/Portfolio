@@ -1,0 +1,36 @@
+.aboutme {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+
+  .about {
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: auto 0;
+
+    &__img {
+      width: 80%;
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    &__text {
+      font-size: 3rem;
+    }
+  }
+
+  .eduskills {
+    width: 50%;
+    margin: auto 0;
+    text-align: center;
+
+    &__edu {
+    }
+    &__skills {
+      margin: 0 auto;
+    }
+  }
+}
