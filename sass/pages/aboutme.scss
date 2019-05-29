@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  height: 100vh;
+  height: 96vh;
 
   .about {
     width: 60%;
@@ -15,25 +15,27 @@
     text-align: center;
     padding: 2rem;
     margin: auto;
-    border: 2px solid black;
-    background: 
-    /* top, transparent red, faked with gradient */ linear-gradient(
-        rgba(204, 234, 231, 0.9),
-        rgba(0, 150, 136, 0.9)
-      ),
-      /* bottom, image */ url(../../img/code.jpeg);
-    background-size: cover;
+    background: $color-primary-light;
     -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    position: relative;
+    &__content {
+      position: absolute;
+      transform: translate(-6%, -30%);
+      text-align: center;
+      // border: 2px solid black;
 
-    &__img {
-      width: 50%;
-      -webkit-clip-path: circle(50% at 50% 50%);
-      clip-path: circle(50% at 50% 50%);
-    }
+      &--img {
+        width: 50%;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+      }
 
-    &__text {
-      font-size: 3rem;
+      &--text {
+        width: 50%;
+        position: absolute;
+        transform: translate(50%,-10%);
+      }
     }
   }
 

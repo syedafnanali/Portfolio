@@ -28,12 +28,12 @@
         ><span class="navigation__icon">&nbsp;</span></label
       >
 
-      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__background" id="navBack">&nbsp;</div>
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About me</a>
+            <a href="#" class="navigation__link" id="navLink">About me</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Skill set</a>
@@ -55,10 +55,12 @@
     <!-- LANDING PAGE  -->
     <header class="landing">
       <div class="left">
-        <h1 class="heading-main u-margin-top-small">Hello. I am Syed</h1>
-        <h3 class="heading-sub u-margin-top-small ">
-          Front-End Web Developer
-        </h3>
+        <div class="left__heading">
+          <h1 class="heading-main u-margin-top-small">Hello. I am Syed</h1>
+          <h3 class="heading-sub u-margin-top-small ">
+            Front-End Web Developer
+          </h3>
+        </div>
       </div>
 
       <div class="right">
@@ -67,29 +69,37 @@
     </header>
     <!-- END OF LANDING PAGE -->
 
+    <!-- ABOUT ME SECTION -->
     <section class="aboutme" id="about">
       <div class="about">
-        <img class="about__img" src="./img/profile__pic.jpg" alt="" />
-        <p class="text-primary u-margin-top-small">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-          obcaecati nisi culpa ab ducimus, earum cumque possimus perspiciatis
-          maxime ex sed, sit dolorem! Illo neque non recusandae minus similique
-          autem.
-        </p>
+        <div class="about__content">
+          <img
+            class="about__content--img"
+            src="./img/profile__pic.jpg"
+            alt=""
+          />
+          <p class=" about__content--text text-primary u-margin-top-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+            obcaecati nisi culpa ab ducimus, earum cumque possimus perspiciatis
+            maxime ex sed, sit dolorem! Illo neque non recusandae minus
+            similique autem.
+          </p>
+        </div>
       </div>
 
       <div class="eduskills">
         <div class="eduskills__edu u-margin-top-small">
-          <h1 class="heading-main">Education</h1>
+          <h1 class="heading-primary">Education</h1>
 
           <!-- <h3 class="heading-sub "><em>Northwestern University</em></h3> -->
           <img
+            class="u-margin-top-small"
             src="./img/nu-horizontal.gif"
             alt=""
-            style="  height:14rem; width:30%; margin-top:0;"
+            style="  height:14rem; width:40%; margin-top:0;"
           />
           <h4 class="text-primary">
-              <em>Full-Stack Web Development Bootcamp</em>
+            <em>Full-Stack Web Development Bootcamp</em>
           </h4>
         </div>
         <div class="eduskills__edu u-margin-top-medium">
@@ -98,7 +108,7 @@
             class="u-margin-top-small"
             src="./img/iu.jpeg"
             alt=""
-            style=" height: 6rem; width:25%"
+            style=" height: 5rem; width:28%"
           />
 
           <h4 class="text-primary u-margin-top-medium">
@@ -106,7 +116,7 @@
           </h4>
         </div>
 
-        <h1 class="heading-main u-margin-top-large">Skills</h1>
+        <h1 class="heading-primary u-margin-top-large">Skills</h1>
         <div class="eduskills__skills u-margin-top-medium">
           <div class="eduskills__skills--svgs u-margin-top-small">
             <svg
@@ -217,7 +227,22 @@
         </div>
       </div>
     </section>
+    <!-- END OF ABOUT ME SECTION -->
 
+
+    <!-- PORTFOLIO SECTION -->
+      <section class="portfolio">
+
+      </section>
+    <!-- END OF PORTFOLIO SECTION -->
+
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="./main.js"></script>
   </body>
 </html>

@@ -15,6 +15,12 @@
   background-color: $color-primary-light;
   -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  position: relative;
+
+  &__heading {
+    position: absolute;
+    transform: translate(-17%, -20%);
+  }
 }
 
 .right {

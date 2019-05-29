@@ -1,9 +1,13 @@
-document.querySelectorAll('a[href=".aboutme"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+var switchStatus = false;
+$("#navi-toggle").on("change", function() {
+  if ($(this).is(":checked")) {
+    switchStatus = $(this).is(":checked");
+    // alert(switchStatus); // To verify
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+  } else {
+    switchStatus = $(this).is(":checked");
+    // alert(switchStatus); // To verify
+  }
 });
+
+
