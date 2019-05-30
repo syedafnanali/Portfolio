@@ -20,6 +20,16 @@
   font-weight: 700;
 }
 
+.heading-secondary {
+  color: $color-primary;
+  font-weight: 700;
+}
+
+.text-secondary {
+  font-size: 1.8rem;
+  color: $text-color;
+}
+
 @media only screen and (max-width: 68.75em) {
   .heading-main {
     color: $color-primary;

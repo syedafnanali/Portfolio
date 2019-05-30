@@ -33,7 +33,7 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link" id="navLink">About me</a>
+            <a href="#" class="navigation__link" id="navLink-about">About me</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Skill set</a>
@@ -60,6 +60,9 @@
           <h3 class="heading-sub u-margin-top-small ">
             Front-End Web Developer
           </h3>
+          <a href="#about" class="btn btn--primary u-margin-top-small"
+            >Learn more</a
+          >
         </div>
       </div>
 
@@ -96,19 +99,22 @@
             class="u-margin-top-small"
             src="./img/nu-horizontal.gif"
             alt=""
-            style="  height:14rem; width:40%; margin-top:0;"
+            style=" height:14rem; width:40%; margin-top:0;"
           />
           <h4 class="text-primary">
             <em>Full-Stack Web Development Bootcamp</em>
           </h4>
         </div>
-        <div class="eduskills__edu u-margin-top-medium">
+        <div
+          class="eduskills__edu u-margin-top-medium"
+          style="border-top: .3px solid rgb(189, 219, 187);"
+        >
           <!-- <h3 class="heading-sub"><em>Iqra University</em></h3> -->
           <img
             class="u-margin-top-small"
             src="./img/iu.jpeg"
             alt=""
-            style=" height: 5rem; width:28%"
+            style=" height: 5rem; width:28%; "
           />
 
           <h4 class="text-primary u-margin-top-medium">
@@ -229,20 +235,128 @@
     </section>
     <!-- END OF ABOUT ME SECTION -->
 
-
     <!-- PORTFOLIO SECTION -->
-      <section class="portfolio">
+    <section class="portfolio">
+      <div class="portfolio__heading">
+        <h1 class="heading-primary u-margin-top-large">My Work</h1>
+        <h3 class="text-primary u-margin-top-small">List of all projects</h3>
+      </div>
+      <img
+        src="./img/undraw_portfolio_essv.svg"
+        class="portfolio__img"
+        alt=""
+      />
+      <div class="projects u-margin-top-large">
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">DevNector</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A social network for developers & programmers
+            </h4>
+            <p>Full-stack [MERN]</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Star Wars Game</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              Interactive game built on Star-Wars theme
+            </h4>
+            <p>HTML , CSS , Vanilla-JS</p>
 
-      </section>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Reddigram</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A social network with goodness to instagram and reddit combined
+            </h4>
+
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Mood</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              An app designed to help you change your mood
+            </h4>
+            <p>HTML , CSS , JS , Apis</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Weather App</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A application to tell the weather of your location
+            </h4>
+            <p>HTML , CSS , Vanilla-JS</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Text-2-Speech</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              Convert text to speech with just one click
+            </h4>
+            <p>HTML , CSS , JS ,API</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END OF PORTFOLIO SECTION -->
 
-
-
+    <!-- FOOTER -->
+    <!-- <footer class="footer"></footer> -->
+    <!-- END OF FOOTER -->
 
     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
