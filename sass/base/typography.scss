@@ -30,6 +30,11 @@
   color: $text-color;
 }
 
+.heading-tertiary {
+  font-size: 2rem;
+  color: $color-primary;
+}
+
 @media only screen and (max-width: 68.75em) {
   .heading-main {
     color: $color-primary;

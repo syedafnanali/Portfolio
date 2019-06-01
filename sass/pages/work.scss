@@ -44,6 +44,7 @@
     &:hover img {
       transition: 0.5s all;
       transform: scale(2);
+      background-color: rgba($color-primary, .5);
     }
 
     &:hover .project__single--content {
