@@ -1,11 +1,11 @@
 .heading-main {
-  color: $color-primary;
+  color: $text-color;
   font-size: 7rem;
   font-weight: 600;
 }
 
 .heading-sub {
-  color: $text-color;
+  color: $color-primary-light;
   font-size: 3.5rem;
 }
 
@@ -30,60 +30,67 @@
   color: $text-color;
 }
 
+
 .heading-tertiary {
   font-size: 2rem;
   color: $color-primary;
 }
 
-@media only screen and (max-width: 68.75em) {
+
+
+// MID-SIZE SCREENS (1368px - 1200px )
+@media only screen and (min-width: 75em) and (max-width: 85.5em) {
   .heading-main {
-    color: $color-primary;
+    color: $color-primary-light;
     font-size: 6rem;
-    margin-left: -8rem;
+    font-weight: 600;
   }
+  
   .heading-sub {
     color: $text-color;
     font-size: 3rem;
-    margin-left: -8rem;
   }
 }
 
-@media only screen and (max-width: 64em) {
+// TABLET PORTRAIT (1020px - 768px)
+@media only screen and (min-width: 48em) and (max-width: 63.75em) {
   .heading-main {
-    color: $color-primary;
+    color: $color-primary-light;
     font-size: 6rem;
-    margin-left: -4rem;
+    font-weight: 600;
   }
+  
   .heading-sub {
     color: $text-color;
     font-size: 3rem;
-    margin-left: -4rem;
   }
 }
 
-@media only screen and (max-width: 48em) {
+// SMALL SCREENS (1020px - 768px)
+@media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
   .heading-main {
-    color: $color-primary;
-    font-size: 6rem;
-    margin-left: -4rem;
+    color: $color-primary-light;
+    font-size: 5rem;
+    font-weight: 600;
   }
+  
   .heading-sub {
     color: $text-color;
-    font-size: 3rem;
-    margin-left: -4rem;
+    font-size: 2.5rem;
   }
 }
 
+// SMALL SCREENS ( 500px - 300px)
+@media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
 
-@media only screen and (max-width: 37.5em) {
-    .heading-main {
-      color: $color-primary;
-      font-size: 4rem;
-      margin-left: -4rem;
-    }
-    .heading-sub {
-      color: $text-color;
-      font-size: 2rem;
-      margin-left: -4rem;
-    }
+  .heading-main {
+    color: $color-primary-light;
+    font-size: 4rem;
+    font-weight: 600;
   }
+  
+  .heading-sub {
+    color: $text-color;
+    font-size: 2rem;
+  }
+}

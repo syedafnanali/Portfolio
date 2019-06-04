@@ -2,12 +2,8 @@
   margin: 2rem 2rem;
   height: 96vh;
   overflow: hidden;
-  background-image: linear-gradient(
-    0deg,
-    rgba($color-primary-light, 0.8),
-    white
-  );
-  border: 1px solid $color-primary-light;
+  background-image: linear-gradient(0deg, rgba($color-primary, 0.4), white);
+  // border: 1px solid $color-primary;
   position: relative;
 
   &__heading {
@@ -20,6 +16,15 @@
     width: 20%;
     left: 7%;
     top: 40%;
+    transition: all .4s;
+    -webkit-box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      transform: translate(.5rem, 1rem);
+    }
+    
   }
 }
 
@@ -35,16 +40,22 @@
   &__single {
     z-index: 4;
     background: white;
-    border: 1px solid $color-primary;
-    border-radius: 1rem;
+    border: 1px solid rgba($color-primary, 0.4);
+    -webkit-box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 16px 26px -3px rgba(0, 0, 0, 0.4);
+    border-radius:5px;
     position: relative;
     overflow: hidden;
     transition: all 0.5s;
 
+    &:hover {
+      transform: translate(.8rem, 1.2rem);
+    }
     &:hover img {
       transition: 0.5s all;
       transform: scale(2);
-      background-color: rgba($color-primary, .5);
+      background-color: rgba($color-primary, 0.4);
     }
 
     &:hover .project__single--content {
@@ -66,6 +77,444 @@
       background-color: $color-primary-light;
       font-size: 2rem;
       transition: all 0.5s;
+    }
+  }
+}
+
+// LAPTOP SCREENS (1600px - 1370px)
+@media only screen and (min-width: 85.625em) and (max-width: 100.31em) {
+  .portfolio {
+    display: flex;
+    min-height: 96vh;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: 40%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 120rem;
+    margin: 16% auto;
+    display: grid;
+    grid-template-rows: 32rem 32rem;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// MID-SIZE SCREENS (1368px - 1200px )
+@media only screen and (min-width: 75em) and (max-width: 85.5em) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: 40%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 110rem;
+    margin: 22rem auto 2rem auto;
+    display: grid;
+    grid-template-rows: 30rem 30rem;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+//TABLET SCREENS (1198px -1024px)
+@media only screen and (min-width: 64em) and (max-width: 74.875em) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 96vh;
+    height: auto;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 80rem;
+    margin: 20rem auto;
+    display: grid;
+    grid-template-rows: 35rem 35rem 35rem;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// TABLET PORTRAIT (1020px - 768px)
+@media only screen and (min-width: 48em) and (max-width: 63.75em) {
+  .portfolio {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 96vh;
+    height: auto;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 40rem;
+    margin: 20rem auto;
+    display: grid;
+    grid-template-rows: 30rem;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// SMALL SCREENS ( 766px- 360px)
+@media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 96vh;
+    height: auto;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 40rem;
+    margin: 20rem auto;
+    display: grid;
+    grid-template-rows: 30rem;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// SMALL SCREENS ( 500px - 300px)
+@media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 96vh;
+    height: auto;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba($color-primary, 0.8), white);
+    // border: 1px solid $color-primary;
+    position: relative;
+
+    &__heading {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .projects {
+    width: 30rem;
+    margin: 20rem auto;
+    display: grid;
+    grid-template-rows: 25rem;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 2rem;
+    grid-gap: 3rem;
+
+    &__single {
+      z-index: 4;
+      background: white;
+      // border: 1px solid $color-primary;
+      // border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &:hover img {
+        transition: 0.5s all;
+        transform: scale(2);
+        background-color: rgba($color-primary, 0.4);
+      }
+
+      &:hover .project__single--content {
+        bottom: 0;
+      }
+    }
+
+    .project__single {
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--content {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5.5rem;
+        padding: 1rem;
+        background-color: rgba($color-primary, 0.9);
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
     }
   }
 }

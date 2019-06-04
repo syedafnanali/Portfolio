@@ -21,3 +21,17 @@
     font-size: 2rem;
   }
 }
+
+.form {
+  position: relative;
+  margin-top: 2rem;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 2.5px;
+    width: 28rem;
+    background-color: $color-primary;
+    left:0rem;
+    top: -1.5rem;
+  }
+}

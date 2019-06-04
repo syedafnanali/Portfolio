@@ -14,7 +14,7 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-
+    <!-- SVG ICONS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -27,25 +27,20 @@
       <label for="navi-toggle" class="navigation__button"
         ><span class="navigation__icon">&nbsp;</span></label
       >
-
       <div class="navigation__background" id="navBack">&nbsp;</div>
-
       <nav class="navigation__nav">
         <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" id="navLink-home">Home</a>
+          </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link" id="navLink-about">About me</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Skill set</a>
+            <a href="#" class="navigation__link" id="navLink-projects">Projects</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Testimonials</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+            <a href="#" class="navigation__link" id="navLink-contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -53,12 +48,13 @@
     <!-- END OF NAVIGATION -->
 
     <!-- LANDING PAGE  -->
-    <header class="landing">
+    <header class="landing" id="home" >
       <div class="left">
+
         <div class="left__heading">
           <h1 class="heading-main u-margin-top-small">Hello. I am Syed</h1>
-          <h3 class="heading-sub u-margin-top-small ">
-            Front-End Web Developer
+          <h3 class="heading-sub u-margin-tb-small ">
+            Full-Stack Web Developer
           </h3>
           <a href="#about" class="btn btn--primary u-margin-top-small"
             >Learn more</a
@@ -72,8 +68,120 @@
     </header>
     <!-- END OF LANDING PAGE -->
 
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="projects">
+      <div class="portfolio__heading">
+        <h1 class="heading-primary u-margin-top-large">My Work</h1>
+        <h3 class="text-primary u-margin-top-small">List of all projects</h3>
+      </div>
+      <img
+        src="./img/undraw_portfolio_essv.svg"
+        class="portfolio__img"
+        alt=""
+      />
+      <div class="projects u-margin-top-large">
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">DevNector</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A social network for developers & programmers
+            </h4>
+            <p>Full-stack [MERN]</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Star Wars Game</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              Interactive game built on Star-Wars theme
+            </h4>
+            <p>HTML , CSS , Vanilla-JS</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Reddigram</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A social network with goodness to instagram and reddit combined
+            </h4>
+
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Mood</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              An app designed to help you change your mood
+            </h4>
+            <p>HTML , CSS , JS , Apis</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Weather App</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              A application to tell the weather of your location
+            </h4>
+            <p>HTML , CSS , Vanilla-JS</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+        <div class="projects__single">
+          <img
+            class="project__single--img"
+            src="./img/landing-img.png"
+            alt=""
+          />
+          <div class="project__single--content">
+            <h1 class="heading-secondary">Text-2-Speech</h1>
+            <h4 class="text-secondary u-margin-tb-small">
+              Convert text to speech with just one click
+            </h4>
+            <p>HTML , CSS , JS ,API</p>
+            <a href="#">Github |</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF PORTFOLIO SECTION -->
+
     <!-- ABOUT ME SECTION -->
-    <section class="aboutme" id="about">
+    <!-- <section class="aboutme" id="about">
       <div class="about">
         <div class="about__content">
           <img
@@ -93,8 +201,6 @@
       <div class="eduskills">
         <div class="eduskills__edu u-margin-top-small">
           <h1 class="heading-primary">Education</h1>
-
-          <!-- <h3 class="heading-sub "><em>Northwestern University</em></h3> -->
           <img
             class="u-margin-top-small"
             src="./img/nu-horizontal.gif"
@@ -109,7 +215,6 @@
           class="eduskills__edu u-margin-top-medium"
           style="border-top: .3px solid rgb(189, 219, 187);"
         >
-          <!-- <h3 class="heading-sub"><em>Iqra University</em></h3> -->
           <img
             class="u-margin-top-small"
             src="./img/iu.jpeg"
@@ -235,127 +340,14 @@
     </section>
     <!-- END OF ABOUT ME SECTION -->
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio">
-      <div class="portfolio__heading">
-        <h1 class="heading-primary u-margin-top-large">My Work</h1>
-        <h3 class="text-primary u-margin-top-small">List of all projects</h3>
-      </div>
-      <img
-        src="./img/undraw_portfolio_essv.svg"
-        class="portfolio__img"
-        alt=""
-      />
-      <div class="projects u-margin-top-large">
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">DevNector</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              A social network for developers & programmers
-            </h4>
-            <p>Full-stack [MERN]</p>
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">Star Wars Game</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              Interactive game built on Star-Wars theme
-            </h4>
-            <p>HTML , CSS , Vanilla-JS</p>
-
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">Reddigram</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              A social network with goodness to instagram and reddit combined
-            </h4>
-
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">Mood</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              An app designed to help you change your mood
-            </h4>
-            <p>HTML , CSS , JS , Apis</p>
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">Weather App</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              A application to tell the weather of your location
-            </h4>
-            <p>HTML , CSS , Vanilla-JS</p>
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-        <div class="projects__single">
-          <img
-            class="project__single--img"
-            src="./img/landing-img.png"
-            alt=""
-          />
-          <div class="project__single--content">
-            <h1 class="heading-secondary">Text-2-Speech</h1>
-            <h4 class="text-secondary u-margin-tb-small">
-              Convert text to speech with just one click
-            </h4>
-            <p>HTML , CSS , JS ,API</p>
-            <a href="#">Github |</a>
-            <a href="#">Link</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END OF PORTFOLIO SECTION -->
-
     <!-- CONTACT PAGE -->
-    <section class="contact">
+    <!-- <section class="contact" id="contact" >
       <div class="contact__box">
         <div class="contact__box--left">
           <h1 class="heading-primary">
             Contact me
           </h1>
-          <form action="" class="u-margin-top-small">
+          <form action="" class="form u-margin-top-small">
             <div class="form-control">
               <label class="form-control__label" for="name">Name</label>
               <input
@@ -394,8 +386,9 @@
             alt=""
             class="contact__box--img"
           />
-
-          <h1 class="heading-tertiary text-center">Connect with social media</h1>
+          <h1 class="heading-tertiary text-center">
+            Connect with social media
+          </h1>
           <div class="contact__box--icons u-margin-top-small">
             <img src="./img/twitter-svgrepo-com.svg" alt="" class="icons" />
             <img src="./img/github-svgrepo-com.svg" alt="" class="icons" />
@@ -404,14 +397,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>  -->
     <!--END OF  CONTACT PAGE -->
-    <!-- FOOTER -->
 
-    <footer class="footer">
+    <!-- FOOTER -->
+    <!-- <footer class="footer">
       <h1 class="text-center">Footer</h1>
-    </footer>
-    <!-- END OF FOOTER -->
+    </footer> -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
