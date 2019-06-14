@@ -195,6 +195,32 @@ svg {
 
 @media only screen and (min-width: 75em) and (max-width: 85.5em) {
   .btn {
+    background-color: #009688;
+  }
+  .btn--secondary {
+    background-color: #009688;
+    color: #cceae7;
+    position: absolute;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 74.875em) {
+  .btn {
+    background-color: #009688;
+  }
+  .btn--secondary {
+    background-color: #009688;
+    color: #cceae7;
+    position: absolute;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 85.5em) {
+  .btn {
     background-color: #cceae7;
     text-align: center;
     color: #535461;
