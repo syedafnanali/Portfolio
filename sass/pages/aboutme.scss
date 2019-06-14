@@ -1,79 +1,62 @@
 .aboutme {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  height: 96vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba($color-primary-light, 0.8),
+    white
+  );
   border: 1px solid $color-primary-light;
-  box-shadow: 0 0 5rem $color-primary-light;
-  background-image: linear-gradient(90deg, rgb(241, 251, 250), white);
+  height: 96vh;
+  display: flex;
+  align-items: stretch;
+  margin: 2rem;
 
-  .about {
-    width: 60%;
-    height: 95%;
+  .personal {
+    // border: 2px solid black;
+    // border-right: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    margin: auto;
-    background: $color-primary-light;
+    margin: auto 0;
+    width: 60%;
+    height: 100%;
+    background-color: $color-primary;
     -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
     position: relative;
 
-    &__content {
+    .content {
       position: absolute;
-      transform: translate(-6%, -30%);
-      text-align: center;
+      transform: translate(35%, 20%);
       // border: 2px solid black;
-
+      width: 50%;
+    }
+    &__shape {
+      width: 45rem;
+      height: 45rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      margin: auto auto;
       &--img {
-        width: 50%;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        width: 100%;
       }
+    }
 
-      &--text {
-        width: 50%;
-        position: absolute;
-        transform: translate(50%, -10%);
-      }
+    &__text {
+      font-size: 3rem;
+      margin: 2rem auto;
     }
   }
 
-  .eduskills {
+  .imgbox {
     width: 40%;
-    margin: auto;
-    text-align: center;
-    padding: 5rem;
-    position: relative;
-
-    &__edu {
-      &:before {
-        position: absolute;
-        content: "";
-        height: 2.5px;
-        width: 27rem;
-        background-color: $color-primary;
-        top: 13.5rem;
-        left: 26rem;
-      }
-    }
-    &__skills {
-      margin: 0 auto;
-      position: relative;
-
-      &:before {
-        position: absolute;
-        content: "";
-        height: 2.5px;
-        width: 15rem;
-        background-color: $color-primary;
-        left: 27rem;
-        top: -1.5rem;
-      }
+    height: 100%;
+    // border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      width: 100%;
     }
   }
 }

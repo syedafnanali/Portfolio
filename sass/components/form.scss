@@ -25,6 +25,7 @@
 .form {
   position: relative;
   margin-top: 2rem;
+  
   &:before {
     position: absolute;
     content: "";
@@ -33,5 +34,175 @@
     background-color: $color-primary;
     left:0rem;
     top: -1.5rem;
+  }
+}
+
+//TABLET SCREENS (1198px -1024px)
+@media only screen and (min-width: 64em) and (max-width: 74.875em) {
+
+  .form-control {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  
+    &__label {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+  
+    &__input {
+      width: 100%;
+      padding: 0.5rem;
+      height: 3rem;
+    }
+  
+    &__textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  }
+  
+  .form {
+    position: relative;
+    margin-top: 2rem;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2.5px;
+      width: 26rem;
+      background-color: $color-primary;
+      left:0rem;
+      top: -1.5rem;
+    }
+  }
+}
+
+
+// TABLET PORTRAIT (1020px - 768px)
+@media only screen and (min-width: 48em) and (max-width: 63.75em) {
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  
+    &__label {
+      font-size: 1.7rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+  
+    &__input {
+      width: 100%;
+      padding: 0.5rem;
+      height: 2.5rem;
+    }
+  
+    &__textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1.7rem;
+    }
+  }
+  
+  .form {
+    position: relative;
+    margin-top: 2rem;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2.5px;
+      width: 20.5rem;
+      background-color: $color-primary;
+      left:0rem;
+      top: -1.5rem;
+    }
+  }
+}
+
+// SMALL SCREENS ( 766px- 500px)
+@media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  
+    &__label {
+      font-size: 1.7rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+  
+    &__input {
+      width: 100%;
+      padding: 0.5rem;
+      height: 2rem;
+    }
+  
+    &__textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1.7rem;
+    }
+  }
+  
+  .form {
+    position: relative;
+    margin-top: 2rem;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2.5px;
+      width: 18rem;
+      background-color: $color-primary;
+      left:0rem;
+      top: -1.5rem;
+    }
+  }
+}
+
+
+// SMALL SCREENS ( 500px - 300px)
+@media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  
+    &__label {
+      font-size: 1.7rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+  
+    &__input {
+      width: 100%;
+      padding: 0.5rem;
+      height: 2rem;
+    }
+  
+    &__textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1.7rem;
+    }
+  }
+  
+  .form {
+    position: relative;
+    margin-top: 2rem;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2.5px;
+      width: 18rem;
+      background-color: $color-primary;
+      left:0rem;
+      top: -1.5rem;
+    }
   }
 }

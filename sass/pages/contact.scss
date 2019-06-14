@@ -50,3 +50,245 @@
     transform: translateY(0.5rem);
   }
 }
+
+// MID-SIZE SCREENS (1368px - 1200px )
+@media only screen and (min-width: 75em) and (max-width: 85.5em) {
+  .contact {
+    &__box {
+      width: 110rem;
+
+      &--left {
+        width: 50%;
+        margin: auto 0;
+        padding: 2rem;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 2rem 0;
+        height: 100%;
+      }
+
+      &--img {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+//TABLET SCREENS (1198px -1024px)
+@media only screen and (min-width: 64em) and (max-width: 74.875em) {
+  .contact {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    padding: 2.5rem;
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 95rem;
+      padding: 1rem 0;
+
+      &--left {
+        width: 50%;
+        margin: auto 0;
+        padding: 1rem;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem 0;
+        height: 100%;
+      }
+
+      &--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .icons {
+    width: 10%;
+    padding: 0 2rem;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: translateY(0.5rem);
+    }
+  }
+}
+
+// TABLET PORTRAIT (1020px - 768px)
+@media only screen and (min-width: 48em) and (max-width: 63.75em) {
+  .contact {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    overflow: hidden;
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      // padding: 1rem 0;
+
+      &--left {
+        width: 60%;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 0;
+      }
+
+      &--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--img {
+        width: 100%;
+      }
+    }
+  }
+
+  .icons {
+    width: 10%;
+    padding: 0 2rem;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: translateY(0.5rem);
+    }
+  }
+}
+
+// SMALL SCREENS ( 766px- 500px)
+@media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
+  .contact {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    overflow: hidden;
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      // padding: 1rem 0;
+
+      &--left {
+        width: 70%;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 0;
+      }
+
+      &--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--img {
+        display: none;
+      }
+    }
+  }
+
+  .icons {
+    margin-top: 2rem;
+    width: 12%;
+    padding: 0 2rem;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: translateY(0.5rem);
+    }
+  }
+}
+
+// SMALL SCREENS ( 500px - 300px)
+@media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
+  .contact {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    overflow: hidden;
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      // padding: 1rem 0;
+
+      &--left {
+        width: 70%;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 0;
+      }
+
+      &--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--img {
+        display: none;
+      }
+    }
+  }
+
+  .icons {
+    margin-top: 2rem;
+    width: 18%;
+    padding: 0 2rem;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: translateY(0.5rem);
+    }
+  }
+}

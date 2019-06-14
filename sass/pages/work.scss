@@ -374,6 +374,8 @@
 // SMALL SCREENS ( 766px- 360px)
 @media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
   .portfolio {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -448,6 +450,8 @@
 // SMALL SCREENS ( 500px - 300px)
 @media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
   .portfolio {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -11,6 +11,8 @@
   }
 
   &--secondary {
+    background-color: $color-primary;
+    color: $color-primary-light;
     position: absolute;
     font-size: 2rem;
     padding: 1rem 2rem;
