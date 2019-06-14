@@ -9,6 +9,7 @@
   display: flex;
   align-items: stretch;
   margin: 2rem;
+  position: relative;
 
   .personal {
     // border: 2px solid black;
@@ -52,11 +53,401 @@
     width: 40%;
     height: 100%;
     // border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
     &__img {
       width: 100%;
+    }
+  }
+}
+
+// LAPTOP SCREENS (1600px - 1370px)
+@media only screen and (min-width: 85.625em) and (max-width: 100.31em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    height: 96vh;
+    display: flex;
+    align-items: stretch;
+    margin: 2rem;
+    position: relative;
+
+    .personal {
+      // border: 2px solid black;
+      // border-right: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      width: 60%;
+      height: 100%;
+      background-color: $color-primary;
+      -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+      position: relative;
+
+      .content {
+        position: absolute;
+        transform: translate(35%, 15%);
+        // border: 2px solid black;
+        width: 50%;
+      }
+
+      &__shape {
+        width: 42rem;
+        height: 42rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 3rem;
+        margin: 2rem auto;
+      }
+    }
+
+    .imgbox {
+      width: 40%;
+      height: 100%;
+      // border: 2px solid black;
+      position: absolute;
+      right: 2rem;
+      top: 15rem;
+
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// MID-SIZE SCREENS (1368px - 1200px )
+@media only screen and (min-width: 75em) and (max-width: 85.5em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    height: 96vh;
+    display: flex;
+    align-items: stretch;
+    margin: 2rem;
+    position: relative;
+
+    .personal {
+      // border: 2px solid black;
+      // border-right: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      width: 60%;
+      height: 100%;
+      background-color: $color-primary;
+      -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+      position: relative;
+
+      .content {
+        position: absolute;
+        transform: translate(35%, 15%);
+        // border: 2px solid black;
+        width: 50%;
+      }
+
+      &__shape {
+        width: 40rem;
+        height: 40rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 3rem;
+        margin: 2rem auto;
+      }
+    }
+
+    .imgbox {
+      width: 50%;
+      height: 100%;
+      // border: 2px solid black;
+      position: absolute;
+      right: 2rem;
+      top: 23rem;
+
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//TABLET SCREENS (1198px -1024px)
+@media only screen and (min-width: 64em) and (max-width: 74.875em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .personal {
+      width: 100%;
+      height: 60%;
+      position: absolute;
+      top: 0;
+
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+      .content {
+        width: 50%;
+        position: absolute;
+        transform: translate(45%, 3%);
+        text-align: center;
+      }
+
+      &__shape {
+        width: 30rem;
+        height: 30rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 2.5rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .imgbox {
+      width: 40%;
+      position: absolute;
+      top: 52rem;
+      left: 25rem;
+      // border: 2px solid black;
+
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// TABLET PORTRAIT (1020px - 768px)
+@media only screen and (min-width: 48em) and (max-width: 63.75em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 2.5rem 0;
+
+    .personal {
+      width: 100%;
+      height: 65%;
+      position: absolute;
+      top: 0;
+
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+      .content {
+        width: 50%;
+        position: absolute;
+        transform: translate(45%, 6%);
+        text-align: center;
+      }
+
+      &__shape {
+        width: 25rem;
+        height: 25rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 2.2rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .imgbox {
+      width: 50%;
+      position: absolute;
+      top: 48rem;
+      left: 22rem;
+      // border: 2px solid black;
+
+      &__img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+// SMALL SCREENS ( 766px- 500px)
+@media only screen and (min-width: 31.25em) and (max-width: 47.875em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding:  0;
+
+    .personal {
+      width: 100%;
+      height: 96%;
+      position: absolute;
+
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+
+
+      .content {
+        width: 50%;
+        position: absolute;
+        transform: translate(50%, 5%);
+        text-align: center;
+      }
+
+      &__shape {
+        width: 25rem;
+        height: 25rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 2.5rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .imgbox {
+      display: none;
+     
+
+      &__img {
+        display: none;
+        
+      }
+    }
+  }
+}
+
+
+// SMALL SCREENS ( 500px - 300px)
+@media only screen and (min-width: 18.75em) and (max-width: 31.125em) {
+  .aboutme {
+    background-image: linear-gradient(
+      0deg,
+      rgba($color-primary-light, 0.8),
+      white
+    );
+    border: 1px solid $color-primary-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 2.5rem 0;
+
+    .personal {
+      width: 100%;
+      height: 97%;
+      position: absolute;
+
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+
+
+      .content {
+        // border: 2px solid black;
+        width: 90%;
+        position: absolute;
+        transform: translate(5%, 30%);
+        text-align: center;
+      }
+
+      &__shape {
+        width: 20rem;
+        height: 20rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: auto auto;
+        &--img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 2rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .imgbox {
+      display: none;
+     
+
+      &__img {
+        display: none;
+        
+      }
     }
   }
 }
