@@ -954,12 +954,12 @@ svg {
   }
   .aboutme .personal .content {
     position: absolute;
-    transform: translate(35%, 15%);
+    transform: translate(36%, 18%);
     width: 50%;
   }
   .aboutme .personal__shape {
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -970,7 +970,7 @@ svg {
     width: 100%;
   }
   .aboutme .personal__text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 2rem auto;
   }
   .aboutme .imgbox {
@@ -995,7 +995,7 @@ svg {
   }
   .aboutme .personal {
     width: 100%;
-    height: 60%;
+    height: 70%;
     position: absolute;
     top: 0;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -1008,8 +1008,8 @@ svg {
     text-align: center;
   }
   .aboutme .personal__shape {
-    width: 30rem;
-    height: 30rem;
+    width: 28rem;
+    height: 28rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -1020,17 +1020,17 @@ svg {
     width: 100%;
   }
   .aboutme .personal__text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 1rem auto;
   }
   .aboutme .imgbox {
     width: 100%;
     position: absolute;
-    top: 54rem;
-    left: 27rem;
+    top: 45rem;
+    left: 30rem;
   }
   .aboutme .imgbox__img {
-    width: 50%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 48em) and (max-width: 63.75em) {
@@ -1043,6 +1043,7 @@ svg {
     position: relative;
     margin: 0;
     padding: 0;
+    height: 99vh;
   }
   .aboutme .personal {
     width: 100%;
@@ -1055,7 +1056,7 @@ svg {
   .aboutme .personal .content {
     width: 50%;
     position: absolute;
-    transform: translate(45%, 15%);
+    transform: translate(45%, 5%);
     text-align: center;
   }
   .aboutme .personal__shape {
@@ -1071,14 +1072,14 @@ svg {
     width: 100%;
   }
   .aboutme .personal__text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 1rem auto;
   }
   .aboutme .imgbox {
     width: 100%;
     position: absolute;
-    top: 58rem;
-    left: 25rem;
+    top: 47rem;
+    left: 20rem;
   }
   .aboutme .imgbox__img {
     width: 50%;
