@@ -183,6 +183,7 @@ svg {
   font-size: 2.5rem;
   padding: 1.5rem 3rem;
   border-radius: 3rem;
+  box-shadow: 1rem 1rem 3rem #494949;
 }
 .btn--secondary {
   background-color: #009688;
@@ -834,7 +835,6 @@ svg {
   border: 1px solid #cceae7;
   height: 96vh;
   display: flex;
-  align-items: stretch;
   margin: 2rem;
   position: relative;
 }
@@ -1181,7 +1181,7 @@ svg {
 .contact {
   background-image: linear-gradient(0deg, rgba(204, 234, 231, 0.8), white);
   border: 1px solid #cceae7;
-  padding: 2.5rem;
+  padding: 5.5rem 0;
 }
 .contact__box {
   display: flex;
@@ -1477,7 +1477,7 @@ svg {
   left: 0;
   bottom: -5.5rem;
   padding: 1rem;
-  background-color: #cceae7;
+  background-color: #009688;
   font-size: 2rem;
   transition: all 0.5s;
 }

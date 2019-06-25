@@ -195,7 +195,10 @@
             />
           </figure>
           <div class="personal__text">
-            My name is Syed Afnan Ali, I am a full-stack web developer. I specialize in creating beautiful and trendy UI designs for websites.Always learning to satiate my curiosity and natural problem-solving instincts.
+            My name is Syed Afnan Ali, I am a full-stack web developer. I
+            specialize in creating beautiful and trendy UI designs for
+            websites.Always learning to satiate my curiosity and natural
+            problem-solving instincts.
           </div>
         </div>
       </div>
@@ -216,7 +219,11 @@
           <h1 class="heading-primary">
             Contact me
           </h1>
-          <form action="" class="form u-margin-top-small">
+          <form
+            action="contact-form.php"
+            class="form u-margin-top-small"
+            method="POST"
+          >
             <div class="form-control">
               <label class="form-control__label" for="name">Name</label>
               <input
@@ -247,7 +254,16 @@
               ></textarea>
             </div>
           </form>
-          <a href="#" style="background-color: rgb(0, 150, 136); color:rgb(204, 234, 231)" class="btn btn--secondary u-margin-top-small">Submit</a>
+          <button
+            type="submit"
+            name="submit"
+            href="#"
+            style="background-color: rgb(0, 150, 136); color:rgb(204, 234, 231)"
+            class="btn btn--secondary u-margin-top-small"
+          >
+            Submit
+          </button>
+          
         </div>
         <div class="contact__box--right">
           <img
@@ -259,10 +275,23 @@
             Connect with social media
           </h1>
           <div class="contact__box--icons u-margin-top-small">
-            <img src="./img/twitter-svgrepo-com.svg" alt="" class="icons" />
-            <img src="./img/github-svgrepo-com.svg" alt="" class="icons" />
-            <img src="./img/linkedin-svgrepo-com.svg" alt="" class="icons" />
-            <img src="./img/email-svgrepo-com.svg" alt="" class="icons" />
+            <a href="" class="icons">
+              <img src="./img/twitter-svgrepo-com.svg" alt="" / >
+            </a>
+            <a href="https://github.com/syedafnanali" class="icons">
+              <img src="./img/github-svgrepo-com.svg" alt="" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/syed-afnan-ali-4a90b065/"
+              class="icons"
+            >
+              <img src="./img/linkedin-svgrepo-com.svg" alt="" />
+            </a>
+
+            <a href=" mailto:syedafnanali@hotmail.com" class="icons">
+              <img src="./img/email-svgrepo-com.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>

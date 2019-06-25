@@ -11,6 +11,7 @@
     left: 11%;
     top: 15%;
   }
+
   &__img {
     position: absolute;
     width: 20%;
@@ -74,7 +75,7 @@
       left: 0;
       bottom: -5.5rem;
       padding: 1rem;
-      background-color: $color-primary-light;
+      background-color: $color-primary;
       font-size: 2rem;
       transition: all 0.5s;
     }
